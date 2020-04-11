@@ -118,10 +118,10 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(
             description='''
-Performs energy minimization on a small ligand PDB file using AmberTools
+Performs energy minimisation on a small ligand PDB file using AmberTools
 * AmberTools must be installed for the script to work (intended to be used with AmberTools 18-19). Please consider conda to install AmberTools
 * Works with default settings
-* Replaces input file with the minimized version if no suffix is porvided. Make a copy if you want to keep the original ligand PDB file
+* Replaces input file with the minimised version if no suffix is porvided. Make a copy if you want to keep the original ligand PDB file
 * $AMBERHOME path must be set for the amber directory e.g. 'export AMBERHOME=/home/myname/amber18'
 * Python 3.6 +
     ''',
@@ -130,10 +130,10 @@ Performs energy minimization on a small ligand PDB file using AmberTools
     required = parser.add_argument_group('required arguments')
     optional = parser.add_argument_group('optional arguments')
     required.add_argument('-in', '--pdb_in',
-        help='choose a ligand PDB file for energy minimization',
+        help='choose a ligand PDB file for energy minimisation',
         required=True)
     optional.add_argument('-imin', '--imin',
-        help='Specify to turn on/off minimization; default = 1 (on)',
+        help='Specify to turn on/off minimisation; default = 1 (on)',
         default = 1)
     optional.add_argument('-maxcyc', '--maxcyc',
         help='Specify the number of steps; default = 1000',
